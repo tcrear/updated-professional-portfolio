@@ -6,6 +6,8 @@ U of MN Bootcamp Homework #7
 
 ## Screenshot of Deployed Site
 
+![image](https://github.com/tcrear/updated-professional-portfolio/blob/main/assets/images/profile-site-screenshot.JPG)
+
 
 ## Link to Deployed Site
 

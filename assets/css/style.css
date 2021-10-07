@@ -28,7 +28,7 @@ header {
 
 .project-image-large {
     display: inline-flexbox;
-    width: 700px;
+    width: 650px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -107,6 +107,13 @@ aside img {
     width: 380px;
     height: 500px;
     padding-block: border;
+}
+
+aside p {
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
 }
 
 section {

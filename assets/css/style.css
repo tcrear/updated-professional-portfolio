@@ -4,7 +4,7 @@
     --navlink-color: #b9c6ae;
 }
 
-button:hover {
+.href:hover {
     transition:.5s;
     color: #fff;
     background-color: var(--dark);
@@ -110,16 +110,23 @@ aside img {
 }
 
 aside p {
-    padding-left: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 10px;
+    padding: 10px;
+}
+
+.flex-container {
+    display: flexbox;
+    row-gap: 10px;
+    column-gap: 20px;
 }
 
 section {
     width: 700px;
     display: flex;
     flex-wrap: wrap;
+}
+
+section#main {
+    width: 100%;
 }
 
 article {
@@ -144,7 +151,7 @@ article#main {
 
 @media screen and (max-width: 768px) {
     article {
-        max-width: 50%;
+        max-width: 75%;
         padding: 15x;  
     }
 

@@ -1,10 +1,10 @@
 :root {
-    --dark: rgba(145, 204, 204, 0.521); 
+    --dark: rgba(145, 204, 204, 0.521);
     --light: #fff;
     --navlink-color: #b9c6ae;
 }
 
-.href:hover {
+a:hover {
     transition:.5s;
     color: #fff;
     background-color: var(--dark);
@@ -13,7 +13,7 @@
 
 header {
     text-align: center;
-    background-color: var(--dark);  
+    background-color: var(--dark);
     padding-bottom: 50px;
 }
 
@@ -46,12 +46,12 @@ footer {
     padding-top: 30px;
     padding-bottom: 40px;
 }
-    
+
 h1 {
     font-size: 100px;
     padding-top: 15%;
-    padding-bottom: 20px; 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+    padding-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header p {
@@ -92,11 +92,12 @@ header nav ul li {
 main {
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start
+    align-content: flex-start;
+    justify-content: space-between;
 }
 
 aside {
-    width: 400px;
+    width: 440px;
     padding-top: 20px;
     padding-left: 20px;
     padding-bottom: 20px;
@@ -131,7 +132,7 @@ section#main {
 
 article {
     width: 50%;
-    padding: 10px;  
+    padding: 10px;
 }
 
 article#main {
@@ -140,38 +141,71 @@ article#main {
 
 @media screen and (max-width: 992px) {
     article {
-        max-width: 25%;
-        padding: 15x;  
+        max-width: 100%;
+        width: 90vw;
+        text-align: center;
+        padding: 15x;
     }
 
-    #main {
+    #main{
         max-width: 100%;
+    }
+    article#main {
+        width: 90vw;
+    }
+    section{
+        flex-direction: column;
+    }
+    .project-image-large{
+        width: 80vw;
+    }
+
+    .project-image{
+        width: 80vw;
     }
 }
 
 @media screen and (max-width: 768px) {
     article {
-        max-width: 75%;
-        padding: 15x;  
+        max-width: 100%;
+        width: 90vw;
+        text-align: center;
+        padding: 15x;
     }
 
     #main {
         max-width: 100%;
+    }
+
+    article#main {
+        width: 90vw;
+    }
+    section{
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
 @media screen and (max-width: 576px) {
     article {
         max-width: 100%;
-        padding: 15x;  
+        width: 90vw;
+        text-align: center;
+        padding: 15x;
     }
     #main {
-        max-width: 100%; 
-    }  
+        max-width: 100%;
+    }
+    article#main {
+        width: 90vw;
+    }
+    section{
+        flex-direction: column;
+    }
 }
 
-button {   
+button {
     border-style: none;
-    padding-top: 2px;   
+    padding-top: 2px;
     text-decoration-color: wheat;
 }
